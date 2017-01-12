@@ -1,0 +1,276 @@
+bye()
+swirl()
+qplot(displ,hwy,data=mpg)
+nxt()
+info()
+skip()
+bye()
+swirl()
+skip()
+swirl()
+head(airquality)
+range(airquality$Ozone,na.rm=T)
+range(airquality$Ozone,na.rm=TRUE)
+hist(airquality$Ozone)
+table(airquality$Month)
+boxplot(Ozone~Month,airquality)
+boxplot(Ozone~Month,airquality,xlab="Month",ylab="Ozone(ppb)",col.axis="blue",col.lab="red")
+boxplot(Ozone~Month,airquality,xlab="Month",ylab="Ozone (ppb)",col.axis="blue",col.lab="red")
+title(main="Ozone and Wind in New York City")
+with(airquality,plot(Wind,Ozone))
+title(main="Ozone and Wind in New York City")
+length(par)
+length(par())
+par()
+names(par())
+par()$pin
+par("fg")
+par("pch")
+par("lty")
+plot(airquality$Wind,airquality$Ozone,type="n")
+title(main="Wind and Ozone in NYC")
+may <- subset(airquality,Month=="May")
+may <- subset(airquality,Month=="5)
+may <- subset(airquality,Month=="5)}
+may <- subset(airquality,Month==5)}
+may <- subset(airquality,Month==5}
+may <- subset(airquality,Month==5)
+points(Wind, OZone, color="blue", pch=2)
+points(may$Wind, may$OZone, color="blue", pch=2)
+points(may$Wind, may$OZone, color="blue", pch=17)
+points(may$Wind, may$OZone, col="blue", pch=17)
+points(may$Wind,may$Ozone,col="blue",pch=17)
+notmay <- subset(airquality,Month!=5)
+points(may$Wind,may$Ozone,col="red",pch=1)
+points(may$Wind,may$Ozone,col="red",pch=8)
+points(notmay$Wind,notmay$Ozone,col="red",pch=8)
+legend(topright, c(17,8),c("blue","red"),c("May","Other Months"))
+legend("topright", c(17,8),c("blue","red"),c("May","Other Months"))
+legend("topright", pch=c(17,8),col=c("blue","red"),legend=c("May","Other Months"))
+abline(v=median(airquality$Wind),lty=2)
+abline(v=median(airquality$Wind),lty=2,lwd=2)
+par(mfrow=c(1,2))
+plot(airquality$Wind,airquality$OZone,main="OZone and Wind")
+plot(airquality$Wind, airquality$Ozone, main = "Ozone and Wind")
+plot(airquality$OZone, airquality$Solor, main = "Ozone and Solar Radiation")
+plot(airquality$OZone, airquality$Solor.R, main = "Ozone and Solar Radiation")
+plot(airquality$OZone, airquality$OZone, main = "Ozone and Solar Radiation")
+par(mfrow=c(1,2))
+plot(airquality$Wind, airquality$Ozone, main = "Ozone and Wind")
+plot(airquality$OZone, airquality$Solor.R, main = "Ozone and Solar Radiation")
+plot(airquality$Ozone, airquality$Solar.R, main = "Ozone and Solar Radiation")
+par(mfrow=c(1,3),mar=c(4,4,2,1),oma-c(0,0,2,0))
+par(mfrow=c(1,3),mar=c(4,4,2,1),oma=c(0,0,2,0))
+plot(airquality$Wind, airquality$Ozone, main = "Ozone and Wind")
+plot(airquality$Ozone, airquality$Solar.R, main = "Ozone and Solar Radiation")
+plot(airquality$Solar.R, airquality$Ozone, main = "Ozone and Solar Radiation")
+plot(airquality$Temp, airquality$Ozone, main = "Ozone and Temperature")
+mtext("Ozone and Weather in New York City", outer=T)
+mtext("Ozone and Weather in New York City", outer=TRUE)
+quit()
+setwd("edaproject1/ExData_Plotting1/")
+dt <- fread(filename,colClasses=c("Date","time","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")
+library(data.table)
+dt <- fread(filename,colClasses=c("Date","time","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")
+filename = "house_power.zip"
+dt <- fread(filename,colClasses=c("Date","time","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")
+dt <- fread(filename,colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")
+?unzip
+unzip("house_power.zip")
+txtfilename = "household_power_consumption.txt"
+dt <- fread(txtfilename,colClasses=c("Date","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")
+str(Dt)
+str(dt)
+subdt <- subset(dt, Date %in% c("1/2/2007","2/2/2007"))#
+#
+#draw the hist to the png file#
+png("plot1.png", width=480, height=480)#
+with(subdt, hist(Global_active_power,col="red", xlab="Global Acitve Power(kilowatts)", main="Global Acitve Power"))#
+dev.off()
+subdt[,Date] <- subdt[,as.Date(Date)]
+subdt[,Date] <- subdt[,as.Date(Date)]
+?as.Date
+as.Date(subdt$Date)
+subdt[,Date] <- as.Date(subdt$Date)
+subdt[,"Date"] <- as.Date(subdt$Date)
+subdt
+subdt[1,"Date"]
+str(subdt[1,"Date"])
+strptime(subdt$Time)
+dt <- fread(txtfilename,colClasses=c("Date","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")
+subdt <- subset(dt, Date %in% c("1/2/2007","2/2/2007"))
+subdt[,strptime()]
+?strptime
+subdt[,strptime(paste(Date,Time),"%d/%m/%y %H:%M:%S")]
+subdt[,strptime(paste(Date,Time)]
+subdt[,strptime(paste(Date,Time))]
+subdt
+subdt <- subdt[,strptime(paste(Date,Time))]
+subdt
+str(subdt)
+subdt <- subdt[,timestr:=paste(Date,Time))]
+subdt <- subdt[,timestr:=paste(Date,Time)]
+subdt
+subdt[,timestr:=paste(Date,Time)]
+subdt
+subdt[,timect:=strptime(timestr,"%d/%m/%y %H:%M:%S")]
+subdt
+subdt[,timect:=strptime(timestr,"%d/%m/%y %H:%M:%S")]
+d <- strptime("1/2/2007 00:00:00","%d/%m/%y %H:%M:%S")
+d
+d <- strptime("1/2/2007 00:00:00","%d/%m/%y %H:%M:%S")
+>strptime
+?strptime
+d
+?as.Date
+subdt[,Date:=as.Date(Date,"%d/%m/%y")]
+subdt
+subdt <- subset(dt, Date %in% c("1/2/2007","2/2/2007"))
+subdt
+d1 = "1/2/2007"
+d2 = as.Date(d1,"%d/%m/%y")
+d2
+d1 = "1/2/2010"
+d2 = as.Date(d1,"%d/%m/%y")
+d2
+d1 = "1/2/1999"
+d2 = as.Date(d1,"%d/%m/%y")
+d2
+?as.Date
+d2 = as.Date(d1,"%d/%m/%Y")
+d2
+d2 = as.Date(d1,"%d/%m/%y")
+d1 = 1/2/2007 00:00:00
+d1 = "1/2/2007 00:00:00"
+d2 =strptime(d1,"%d/%m/%Y %H:%M:%S")
+d2
+d2 =strptime(d1,"%d/%m/%Y %H:%M:%S")
+d1 = "1/2/2007 00:00:01"
+d2 =strptime(d1,"%d/%m/%Y %H:%M:%S")
+d2
+str(d2)
+weekdays(d2)
+?weekdats
+?weekdays
+weekdays(d2, abbreviate=T)
+?plot
+subdt
+plot(x=Time,y=Gloal_active_power,type=l)
+with(subdt,plot(x=Time,y=Gloal_active_power,type=l))
+with(subdt,plot(x=Time,y=Global_active_power,type=l))
+subdt[Date:=as.Date(Date,"%d/%m/%Y")]
+subdt[,Date:=as.Date(Date,"%d/%m/%Y")]
+subdt
+str(subdt)
+with(subdt,plot(x=Date,y=Gloal_active_power,type=l))
+with(subdt,plot(x=Date,y=Glboal_active_power,type=l))
+with(subdt,plot(x=Date,y=Global_active_power,type=l))
+with(subdt,plot(x=Date,y=Global_active_power,type="l"))
+subdt[1,]
+subdt[1,1]
+s = paste(subdt[1,1],subdt[1,2])
+s
+s = strptime(subdt[1,2],"%H:%M:%S")
+s
+s = strptime(subdt[1,2],"%H:%M:%S")
+?strptime
+d1 = "1/2/2007 00:00:00"
+subdt <- subset(dt, Date %in% c("1/2/2007","2/2/2007"))
+subdt[,DateTime:=strptime(paste(Date,Time),"%d/%m/%Y %H:/%M/%S")]
+subdt
+subdt[,DateTime:=strptime(paste(Date,Time),"%d/%m/%Y %H:%M:%S")]
+subdt
+with(subdt,plot(x=Date,y=Global_active_power,type="l"))
+with(subdt,plot(x=DateTime,y=Global_active_power,type="l"))
+?axis
+axis(1,labels=c("Thu,Fri,Sat"))
+axis(1,at=(1,1440,2880),labels=c("Thu,Fri,Sat"))
+axis(1,at=1:3,labels=c("Thu,Fri,Sat"))
+axis(1,1:3,labels=c("Thu,Fri,Sat"))
+axis(1:3,labels=c("Thu,Fri,Sat"))
+axis(1,at=1:3,labels=c("Thu,Fri,Sat"))
+axis(1, at=NULL, labels=c("Thu,Fri,Sat"))
+axis(1, at=subst[c(1,1440,2880,DateTime], labels=c("Thu,Fri,Sat"))
+at=subst[c(1,1440,2880,DateTime]
+at=subst[c(1,1440,2880,DateTime)]
+at=subdt[c(1,1440,2880),DateTime]
+at
+axis(1, at=at, labels=c("Thu,Fri,Sat"))
+axis(1, at=at, labels=c("Thu","Fri","Sat"))
+axis(1, at=1:3, labels=c("Thu","Fri","Sat"))
+?plot
+with(subdt,plot(x=DateTime,y=Global_active_power,type="l",xaxt = "n"))
+axis(1, at=1:3, labels=c("Thu","Fri","Sat"))
+axis(1, at=at, labels=c("Thu","Fri","Sat"))
+with(subdt,plot(x=DateTime,y=Global_active_power,type="l",xlab="", ylab="Global Acitve Power(kilowatts)",xaxt = "n"))
+with(subdt,plot(x=DateTime,y=Global_active_power,type="l",xlab="", ylab="Global Acitve Power (kilowatts)",xaxt = "n"))
+axis(1, at=at, labels=c("Thu","Fri","Sat"))
+source(plot2.R)
+source("plot2.R")
+source("plot2.R")
+source("plot1.R")
+with(subdt,plot(x=DateTime,type="l",xlab="", ylab="Global Acitve Power(kilowatts)",xaxt = "n"))
+subdt
+with(subdt,plot(x=DateTime,y=Global_active_power,type="l",xaxt = "n"))
+subdt[,DateTime:=strptime(paste(Date,Time),"%d/%m/%Y %H:%M:%S")]
+with(subdt,plot(x=DateTime,y=Global_active_power,type="l",xaxt = "n"))
+with(subdt,plot(x=DateTime,type="l",xaxt = "n"))
+?plot
+with(subdt,plot(x=DateTime,type="n",xaxt = "n"))
+with(subdt,plot(type="n",xaxt = "n"))
+with(subdt,plot(x=DateTime, y="Sub_metering_1", type="l",xaxt = "n"))
+with(subdt,plot(x=DateTime, y="Sub_metering_1", type="l",xaxt = "n"))
+length
+length(subdt$DateTime)
+length(subdt$Sub_metering_1)
+with(subdt,plot(x=DateTime, y=Sub_metering_1, type="l",xaxt = "n"))
+with(subdt,plot(x=DateTime, y=Sub_metering_1, type="l",xlab="", ylab="Energy Sub Metering", xaxt = "n"))
+?lines
+lines(y= Sub_metering_2,col="red")
+lines(y=subdt$Sub_metering_2,col="red")
+with(subdt, lines(x=DateTime, y=Sub_metering_2,col="red")
+)
+with(subdt, lines(x=DateTime, y=Sub_metering_3,col="blue"))
+?legend
+?legend
+legend("topright","(Sub_metering_1, Sub_metering_2, Sub_metering_3)")
+legend("topright",legend=c(Sub_metering_1, Sub_metering_2, Sub_metering_3))
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+with(subdt,plot(x=DateTime, y=Sub_metering_1, type="l",xlab="", ylab="Energy Sub Metering", xaxt = "n"))
+with(subdt, lines(x=DateTime, y=Sub_metering_3,col="blue"))
+with(subdt, lines(x=DateTime, y=Sub_metering_2,col="red"))
+legend("topright",legend=c(Sub_metering_1, Sub_metering_2, Sub_metering_3))
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),pch=1)
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),pch=2)
+?legend
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty=1)
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty=1,col=c("black","red","blue"))
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty=1)
+with(subdt,plot(x=DateTime, y=Sub_metering_1, type="l",xlab="", ylab="Energy Sub Metering", xaxt = "n"))#
+with(subdt, lines(x=DateTime, y=Sub_metering_2,col="red"))#
+with(subdt, lines(x=DateTime, y=Sub_metering_3,col="blue"))#
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty=1,col=c("black","red","blue"))#
+at=subdt[c(1,1441,2880),DateTime]#
+axis(1, at=at, labels=c("Thu","Fri","Sat"))
+source("plot3.R")
+source("plot3.R")
+dt <- fread(txtfilename,colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings="?")#
+#
+#extract the date by subet#
+subdt <- subset(dt, Date %in% c("1/2/2007","2/2/2007"))#
+#
+#create R time format column from the Date and the Time column by strptime#
+subdt[,DateTime:=strptime(paste(Date,Time),"%d/%m/%Y %H:%M:%S")]#
+#
+#draw  to the png file#
+png("plot3.png", width=480, height=480)#
+with(subdt,plot(x=DateTime, y=Sub_metering_1, type="l",xlab="", ylab="Energy Sub Metering", xaxt = "n"))#
+with(subdt, lines(x=DateTime, y=Sub_metering_2,col="red"))#
+with(subdt, lines(x=DateTime, y=Sub_metering_3,col="blue"))#
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty=1,col=c("black","red","blue"))#
+at=subdt[c(1,1441,2880),DateTime]#
+axis(1, at=at, labels=c("Thu","Fri","Sat"))#
+dev.off()
+source("plot3.R")
+source("plot3.R")
+quit()
